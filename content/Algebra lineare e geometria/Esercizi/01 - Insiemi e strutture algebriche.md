@@ -122,4 +122,44 @@ Affinché sia un gruppo abeliano:
 - ogni elemento deve essere invertibile: $f(x)+g(x)=0\implies g(x)=-f(x)$;
 - $+$ commutativa: $(f+g)(x)=f(x)+g(x)=g(x)+f(x)=(g+f)(x)$.
 
-> *Detto $\mathcal{}$*
+> *Detto $\mathcal{A}={f:\mathbb{R}\to\mathbb{R}}$ e definita l'operazione $\forall f,g\in\mathcal{A}\quad f+g:\mathbb{R}\to\mathbb{R}$ come $(f+g)(x)=f(x)+g(x)\in\mathbb{R}\quad\forall x\in\mathbb{R}$, dire quali insiemi $\mathcal{A}_{j}$ con quest'operazione formino un gruppo*.
+
+1) $A_{0}=\{f\in\mathcal{A}:f(1)=0\}$:
+	1) $+$ è associativa;
+	2) l'elemento neutro è $f(x)=0$;
+	3) l'elemento inverso è $-f(x)$.
+2) $A_{1}=\{f\in\mathcal{A}:f(1)=1\}$:
+	1) $+$ è associativa;
+	2) l'elemento neutro non esiste, perché non posso avere una funzione nulla ovunque.
+3) $A_{2}=\{f\in\mathcal{A}:f(1)=f(2)=0\}$:
+	1) $+$ è associativa;
+	2) l'elemento neutro è $f(x)=0$;
+	3) l'elemento inverso è $-f(x)$.
+4) $A_{3}=\{f\in\mathcal{A}:f(x)\leq 3\ \forall x\in \mathbb{R}\}$:
+	1) $+$ è associativa;
+	2) l'elemento neutro è $f(x)=0$;
+	3) non tutti gli elementi sono invertibili, in quanto data la funzione $f(x)=-4$ non esiste una funzione che restituisca l'elemento neutro. 
+5) $A_{4}=\{f\in\mathcal{A}:\exists k \in \mathbb{R}:f(x)\leq k\ \forall x\in \mathbb{R}\}$:
+	1) $+$ è associativa;
+	2) l'elemento neutro è $f(x)=0$;
+	3) non tutti gli elementi sono invertibili, in quanto data la funzione $f(x)=-k+1$ non esiste una funzione che restituisca l'elemento neutro. 
+
+> *Sia $H=\{\lambda \pi|\forall\lambda\in\mathbb{Z}\}$; provare che $(H,+)$ è un gruppo abeliano.*
+
+È l'insieme dei multipli di $\pi$. L'operazione di somma è sicuramente associativa e commutativa, inoltre esiste l'elemento neutro $0$ ottenuto con $\lambda=0$, ed essendo in $\mathbb{Z}$ esiste l'opposto di $\lambda$, per cui si ha $\lambda\pi + (-\lambda\pi)=0$.
+
+> *Trovare in $\mathbb{C}$ le radici ottave di -1.*
+
+Bisogna risolvere l'equazione $x^8 + 1=0$. Scrivendo $-1$ in forma goniometrica si ottiene $\rho=1,\vartheta=\pi \implies x_{k}=\cos\left( \frac{2\pi k+\pi}{8} \right) + i\sin\left( \frac{2\pi k+\pi}{8} \right), k=0,1,\dots,7$.
+
+> *Risolvere in $\mathbb{C}$ l'equazione $2x^6+i=\sqrt{ 3 }$.*
+
+Si può riscrivere $x^6-\frac{\sqrt{ 3 }-i}{2}=0$. Per scrivere il termine noto in forma complessa bisogna trovare $\rho$ e $\vartheta$ in maniera tale che:
+$$
+\begin{cases}
+\rho \cos \vartheta =\frac{\sqrt{ 3 }}{2}\\
+\rho\sin\vartheta=-\frac{1}{2}
+\end{cases}
+\implies
+\tan \vartheta=-\frac{\sqrt{ 3 }}{3} \implies \vartheta=\frac{2\pi}{3},\rho={1}
+$$
