@@ -4,19 +4,19 @@
 > 2) $(A \cup B)\setminus(B \cap C) = (A\setminus B)\cup(B\setminus C)$
 
 $$
-\begin{align}
+\begin{align*}
 [(A \cup C)\cap B]\setminus(A \cap B) &= [(A\cap B)\cup(C\cap B)]\setminus(A\cap B)= \\
 &= ((A\cap B)\setminus(A\cap B))\cup((C\cap B)\setminus(A\cap B)) = \\
 &= \emptyset\cup((C\cap B)\setminus(A\cap B)) \\
 &= (C\cap B)\setminus A
-\end{align}
+\end{align*}
 $$
 $$
-\begin{align}
+\begin{align*}
 (A \cup B)\setminus(B \cap C) &= A \setminus(B\cap C)\cup B\setminus(B\cap C) \\
 &= ((A\setminus B) \cup (A \setminus C)) \cup(B\setminus C) \\ 
 &= (A\setminus B) \cup(B\setminus C)
-\end{align}
+\end{align*}
 $$
 > *Gli studenti di un istituto sono $1200$: di questi $780$ hanno superato Geometria, $750$ hanno superato Analisi e $1000$ hanno superato Fisica. Dire minimo e massimo numero di studenti che hanno superato tutte le tre materie.*
 
@@ -30,10 +30,18 @@ $|A\cup B\cup C| = |A|+|B|+|C| - (|A\cap B| + |A\cap C|+|B\cap C|) + x$. Dal tes
 > *Siano $A=\mathbb{R},B=\mathbb{Q}$. Trovare un elemento in $B\times A \setminus A \times B$ ed uno in $A\times B \setminus B \times A$*.
 
 Poiché $A=\mathbb{Q}\cup\mathbb{I}=B\cup\mathbb{I}$ dove $\mathbb{I}$ sono gli irrazionali, si ha che:
-$$B\times A=B\times(B\cup\mathbb{I})=(B\times B)\cup(B\times \mathbb{I})$$
-$$A\times B=(B\cup\mathbb{I})\times B=(B\times B)\cup(\mathbb{I}\times B)$$
-$$B\times A\setminus A\times B= (B\times \mathbb{I}) \cup (\mathbb{I}\times B)$$
-$$A\times B\setminus B\times A= (\mathbb{I} \times B) \cup (B\times \mathbb{I})$$
+$$
+B\times A=B\times(B\cup\mathbb{I})=(B\times B)\cup(B\times \mathbb{I})
+$$
+$$
+A\times B=(B\cup\mathbb{I})\times B=(B\times B)\cup(\mathbb{I}\times B)
+$$
+$$
+B\times A\setminus A\times B= (B\times \mathbb{I}) \cup (\mathbb{I}\times B)
+$$
+$$
+A\times B\setminus B\times A= (\mathbb{I} \times B) \cup (B\times \mathbb{I})
+$$
 dunque $(3,\sqrt{ 2 })$ è elemento del primo insieme, mentre $(\sqrt{ 2 },3)$ del secondo.
 ## Applicazioni
 > *Determinare se $f(x)=\frac{2x+1}{x^2-2}$ è un'applicazione nei seguenti casi*

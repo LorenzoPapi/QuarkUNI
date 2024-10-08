@@ -47,11 +47,17 @@ $$
 che ha sempre significato, dato che $(a,b)\neq(0,0)\implies a^2+b^2\neq0$, per cui ogni elemento $(a,b)$ ha inverso $\left(\frac{a}{a^2+b^2},-\frac{b}{a^2+b^2}\right)$. Quindi $(\mathbb{C},+,\cdot)$ è un *campo*.
 ### Forma algebrica
 Ora, si verifica che i numeri $(a,0)$ sono i numeri reali: infatti $(a,0)+(b,0)=(a+b,0)$ e $(a,0)\cdot(b,0)=(ab,0)$, quindi $\mathbb{R}\subset\mathbb{C}$, in particolare è *sottocampo*. Inoltre, il numero complesso $(0,1)$ ha la proprietà che:
-$$(0,1)\cdot(0,1)=(0-1,0+0)=(-1,0)$$
+$$
+(0,1)\cdot(0,1)=(0-1,0+0)=(-1,0)
+$$
 ovvero il suo quadrato è il numero reale $-1$. Infine, ogni numero si può scrivere in forma unica come:
-$$(a,b)=(a,0)+(0,1)\cdot(b,0)=(a,0)+(0,b)=(a,b)$$
+$$
+(a,b)=(a,0)+(0,1)\cdot(b,0)=(a,0)+(0,b)=(a,b)
+$$
 per cui, chiamando i complessi che si rivelano numeri reali $(a,0)=a$ e $(0,1)=i$ si ottiene che:
-$$\forall z \in \mathbb{C}:\exists a,b \in\mathbb{R}:z=a+ib, i^2=-1$$
+$$
+\forall z \in \mathbb{C}:\exists a,b \in\mathbb{R}:z=a+ib, i^2=-1
+$$
 $a$ si chiama ***parte reale***, mentre $b$ ***parte immaginaria***. Se $z=a+ib$, allora $\overline{z}=a-ib$ si chiama ***coniugato di $z$***. Detti $z=a+bi,w=c+di\in\mathbb{C}$, si ha che:
 1) $\overline{(\overline{z})}=\overline{(a-bi)} = a+bi=z$
 2) $z+\overline{z}=a+bi+a-bi=2a\in\mathbb{R}$
@@ -64,7 +70,9 @@ Un numero complesso $a+ib$ individua in un piano a coordinate cartesiane ortogon
 - $\rho=\overline{OP}=|z|=\sqrt{ a^2+b^2 }$ come ***modulo***,
 - $\vartheta\in[0,2\pi)$ come l'angolo di cui deve ruotare in senso antiorario l'asse $x$ per sovrapporsi equiverso ad $\overline{OP}$, detto ***anomalia***,
 il numero complesso può essere scritto come
-$$a+ib=\rho(\cos\vartheta+i\sin\vartheta)$$
+$$
+a+ib=\rho(\cos\vartheta+i\sin\vartheta)
+$$
 Si osserva che due numeri complessi sono uguali se hanno lo stesso modulo e differiscono nelle loro anomalie di $2\pi$. Presi due numeri complessi in forma trigonometrica:
 $$
 \begin{align}
@@ -72,7 +80,9 @@ $$
 \end{align}
 $$
 e nel caso in cui i due numeri siano uguali, generalizzando ad $n$ moltiplicazioni si ottiene la ***formula di de Moivre***:
-$$z^n=\rho^n(\cos n\vartheta+i\sin n\vartheta)\quad \forall n\in\mathbb{N}$$
+$$
+z^n=\rho^n(\cos n\vartheta+i\sin n\vartheta)\quad \forall n\in\mathbb{N}
+$$
 Consideriamo ora $z^{-1}=\left(\frac{a}{a^2+b^2},\frac{-b}{a^2+b^2}\right)$, ovvero l'inverso moltiplicativo di $z$. Si ha che $\rho'=\sqrt{\frac{a^2+b^2}{(a^2+b^2)^2}}=\sqrt{ \frac{1}{a^2+b^2} }=\rho^{-1}$. Dall'identità $z\cdot z^{-1}=1$ si ottiene che:
 $$
 \begin{cases}
@@ -111,7 +121,9 @@ $$
 per cui $x_\lambda=x_r$ e quindi vi sono solamente $n$ radici distinte.
 # Polinomi ed equazioni algebriche
 Sia $(K,+,\cdot)$ un campo: si dice ***polinomio nell'indeterminata $x$ a coefficienti in $K$*** ogni espressione del tipo
-$$f(x)=a_{0}+a_{1}x+\dots+a_{n}x^n,\ a_{i}\in K$$
+$$
+f(x)=a_{0}+a_{1}x+\dots+a_{n}x^n,\ a_{i}\in K
+$$
 L'insieme di questi polinomi nel campo $K$ si indica con $K[x]$ e ogni polinomio individua una funzione $f: K\to K$. Se $f(x) \in K[x]$ si dice ***grado di $f(x)$ il massimo degli interi $i$ per cui $a_i\neq0$***. Ovvero, $a_d\neq0\land a_i=0\ \forall i > d \iff deg(f(x))=d$. Nel caso del *polinomio nullo*, ovvero un polinomio per cui $\forall i:a_i=0$, il grado non è definito. Due polinomi scritti in forma normale sono ***identici*** se e solo se **coincidono i loro coefficienti per ogni grado**.
 
 Si definiscono le operazioni di somma e prodotto in $K[x]$, prendendo per esempio $\displaystyle f(x)=\sum_{i=0}^n a_ix^i$ e $\displaystyle g(x)=\sum_{i=0}^m b_ix^i$, ponendo $t=\max\{m,n\}$, si ha:
@@ -123,7 +135,9 @@ Risulta quindi che $(K[x],+,\cdot)$ è un *anello commutativo unitario* e si ric
 Vale la regola di **annullamento del prodotto**: gli anelli nei quali vale questa proprietà si chiamano ***domini d'integrità***.
 
 Siano $f(x),g(x)\in K[x]$, con $g(x)\neq0$. Allora esistono due polinomi $q(x),r(x)\in K[x]$ tali che:
-$$f(x)=g(x)q(x)+r(x),\ r(x)=0 \lor deg(r(x))<deg(g(x))$$
+$$
+f(x)=g(x)q(x)+r(x),\ r(x)=0 \lor deg(r(x))<deg(g(x))
+$$
 Vale che $deg(q(x))=deg(f(x))-deg(g(x))$.
 ## Equazioni algebriche
 Un'equazione ***algebrica*** è un'equazione del tipo $f(x)=0, f(x)\in K[x]$. Un elemento $\alpha \in K$ si dice ***soluzione*** (*radice*) dell'equazione $f(x)=0\iff f(\alpha)=0$. Elenchiamo dei teoremi:
