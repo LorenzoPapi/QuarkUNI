@@ -147,7 +147,7 @@ Affinché sia un gruppo abeliano:
 > *Sia $H=\{\lambda \pi|\forall\lambda\in\mathbb{Z}\}$; provare che $(H,+)$ è un gruppo abeliano.*
 
 È l'insieme dei multipli di $\pi$. L'operazione di somma è sicuramente associativa e commutativa, inoltre esiste l'elemento neutro $0$ ottenuto con $\lambda=0$, ed essendo in $\mathbb{Z}$ esiste l'opposto di $\lambda$, per cui si ha $\lambda\pi + (-\lambda\pi)=0$.
-
+## Insiemi numerici
 > *Trovare in $\mathbb{C}$ le radici ottave di -1.*
 
 Bisogna risolvere l'equazione $x^8 + 1=0$. Scrivendo $-1$ in forma goniometrica si ottiene $\rho=1,\vartheta=\pi \implies x_{k}=\cos\left( \frac{2\pi k+\pi}{8} \right) + i\sin\left( \frac{2\pi k+\pi}{8} \right), k=0,1,\dots,7$.
@@ -161,5 +161,49 @@ $$
 \rho\sin\vartheta=-\frac{1}{2}
 \end{cases}
 \implies
-\tan \vartheta=-\frac{\sqrt{ 3 }}{3} \implies \vartheta=\frac{2\pi}{3},\rho={1}
+\tan \vartheta=-\frac{\sqrt{ 3 }}{3} \implies \vartheta=\frac{5\pi}{6},\rho=1
 $$
+Risulta quindi che $x_k=\cos\left( \frac{12k\pi+5}{36} \right)+i\left( \frac{12k\pi+5}{36} \right),k=0,1,\dots,5$
+
+> *Trovare in $\mathbb{C}$ le radici quinte di $z=\cos\frac{5}{12}\pi+i\sin\frac{5}{12}\pi$*
+
+Equivale a risolvere l'equazione $x^5 = z$, per cui le soluzioni sono $x_k=\cos\left(\frac {2k\pi+\frac{5}{12}\pi}{5} \right)+ i\sin\left(\frac{2k\pi+\frac{5}{12}\pi}{5}\right)=\cos\left( \frac{24k+5}{60}\pi\right)+i\sin\left( \frac{24k+5}{60}\pi\right),k=0,1,\dots,4$
+
+> *Trovare in $\mathbb{C}$ le radici quinte di $\frac{2i+1}{i-2}$*.
+
+Significa risolvere $x^5 = \frac{2i+1}{i-2}=\frac{(2i+1)(i+2)}{(i-2)(i+2)}=\frac{-2+2+5i}{-1-4}=\frac{5i}{-5}=-i\implies \rho=1,\vartheta=\frac{3}{2}\pi$. Quindi le radici quinte sono $x_k=\cos\left( \frac{\frac{3}{2}\pi+2k\pi}{5} \right)+i\sin\left( \frac{\frac{3}{2}\pi+2k\pi}{5} \right)=\cos\left( \frac{3+4k}{10}\pi \right)+i\sin\left( \frac{3+4k}{10}\pi \right)$.
+## Polinomi
+> *Sia $G=\{f(x)\in\mathbb{R}[x]:f'(0)=0\}$. Provare che le operazioni tra polinomi $+,\cdot$ sono operazioni in $G$ e verificare che $(G,+)$ è gruppo abeliano, ma $(G\setminus\{0\},\cdot)$ non lo è.*
+
+Detto $f(x)=\sum_{k=0}^n a_{k}x^k$, la sua derivata è un polinomio $f'(x)=\sum_{k=0}^{n-1}b_{k}x^k$ con $b_i=a_{i+1}{i+1}$. Poiché $f'(0)=0\implies b_{0}=0\implies a_{1}=0$. Poiché in ogni polinomio manca il termine di primo grado, date le regole di somma è prodotto non si può ottenere questo tipo di termine a partire dagli altri, quindi le operazioni tra polinomi rimangono operazioni in $G$, ereditandone le caratteristiche principali (associatività, commutatività, distributività). Esiste l'elemento neutro che è $f(x)=0$ e ogni polinomio possiede il suo opposto che si ottiene facendo l'opposto dei coefficienti, quindi $(G,+)$ è gruppo abeliano. Invece, $(G\setminus\{0\},\cdot)$ non lo è dato che manca l'opposto: non per tutti i polinomi ne esiste un inverso tale che il loro prodotto sia $1$.
+
+> *Determinare $a,b\in\mathbb{R}$ in modo che il polinomio $x^3-3x^2+ax+b$ abbia $2$ come radice di molteplicità $2$.*
+
+Dal testo si comprende che il polinomio è divisibile per $(x-2)^2$. Quindi si potrebbe scrivere $x^3-3x^2+ax+b=(x-2)^2(x-\lambda) =(x^2-4x+4)(x-\lambda)=x^3-(\lambda+4)x^2+4(1+\lambda)x-4\lambda$ e per il principio di identità dei polinomi, vale che $\lambda+4=3\implies \lambda=-1$, da cui $a=0,b=4$.
+
+> *Risolvere in $\mathbb{C}$ l'equazione $3x^4-5x^3-7x^2+15x-6=0$.*
+
+Provando a inserire dei valori, $x=1$ risulta soluzione, quindi il polinomio è divisibile per $(x-1)$. Calcolando la divisione con Ruffini si ottiene che $(x-1)(3x^3-2x^2-9x+6)$, ma il secondo fattore si può scrivere come $x^2(3x-2)-3(3x-2)=(x^2-3)(3x-2)$, per cui le soluzioni totali sono $\left\{ -\sqrt{ 3 }, \frac{2}{3}, 1, \sqrt{ 3 } \right\}$.
+
+> *Risolvere in $\mathbb{C}$ l'equazione $x^4-6x^3+7x^2-10x+2=0$, sapendo che ammette $1-i$ come radice.*
+
+Ese buggato perché $1-i$ non è soluzione kek
+
+> *Sia $x^3+ax^2+bx+c=0$ con $a,b,c\in\mathbb{C}$ di radici $\alpha_{1},\alpha_{2},\alpha_{3}$, allora valgono le formule di Vieta. Verificarlo con l'equazione $x^3-2x^2+x-2=0$.*
+
+Si verifica che $x=2$ è soluzione, quindi si scompone con $x^2(x-2)+(x-2)=(x-2)(x^2+1)$ che ha radici $\{2,i,-i\}$. Ponendo che $a=-2, b=1, c=-2$, si ha che:
+$$
+\begin{cases}
+\alpha_{1}+\alpha_{2}+\alpha_{3}=2+i-i=2=-a \\
+\alpha_{1}\alpha_{2}+\alpha_{2}\alpha_{3}+\alpha_{3}\alpha_{1}=2i+1-2i=1=b \\ 
+\alpha_{1}\alpha_{2}\alpha_{3}=2\cdot i\cdot(-i) = 2 = -c \\
+\end{cases}
+$$
+> *Esiste un polinomio reale di grado 4 che ammette la radice $1+i$ doppia e la radice $-1$ semplice? E di grado 5?*
+
+Di grado 4 non può esistere, dato che avere doppia radice $1+i$ implica che sia radice doppia anche $1-i$ e per il teorema fondamentale ha solo 4 radici. Invece, di 5 grado può esistere ed è $p(x)=(x-1-i)^2(x-1+i)^2(x+1)=x^5-3x^4+4x^3-4x+4$.
+
+> *Fattorizzare in $\mathbb{R}[x]$ ed in $\mathbb{C}[x]$ il polinomio $x^4-2x^3+4x^2-6x+3$.*
+
+Si verifica che $x=1$ è soluzione e si ottiene $(x-1)(x^3-x^2+3x-3)=(x-1)^2(x^2+3)$. Nei reali non si può procedere oltre, ma nei complessi si ottiene $(x-1)^2(x-\sqrt{ 3 }i)(x+\sqrt{ 3 }i)$.
+

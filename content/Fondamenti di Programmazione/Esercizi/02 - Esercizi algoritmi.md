@@ -182,3 +182,26 @@ flowchart TB
     \end{algorithmic}
 	\end{algorithm}
 ```
+```pseudo
+	\begin{algorithm}
+	\caption{6}
+	\begin{algorithmic}
+	\Input N
+	\State $i \gets 0$
+	\State $pos \gets 0$
+	\State $neg \gets 0$
+	\While{$i < N$}
+		\State Leggi in $m$
+		\If{$m > 0$}
+			\State $pos \gets pos+1$
+		\Elif{$m < 0$}
+			\State $neg \gets neg+1$
+        \EndIf
+		\State $i \gets i+1$
+    \EndWhile
+    \Print "positivi: $pos$"
+    \Print "negativi: $neg$"
+    \Print "zeri: $N-neg-pos$"
+	\end{algorithmic}
+	\end{algorithm}
+```

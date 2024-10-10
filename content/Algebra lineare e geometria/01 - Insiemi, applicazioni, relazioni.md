@@ -1,9 +1,11 @@
 # [[02 - Insiemistica|Insiemi]]
 # Applicazioni
-Detti $A, B$ insiemi, si definisce ***applicazione*** (*funzione*) da $A$ (*dominio*) a $B$ (*codominio*) una ***legge che associa ad ogni elemento di A uno e un solo elemento di B***. Quindi:
-$$
+> [!definition] Applicazione
+Detti $A, B$ insiemi, si definisce ***applicazione*** (*funzione*) da $A$ (*dominio*) a $B$ (*codominio*) una ***legge che associa ad ogni elemento di A uno e un solo elemento di B***. Quindi: $$
 f:A\to B \iff \forall a \in A: \exists!\ b \in B: b=f(a)
 $$
+
+> [!definition] Immagine e controimmagine
 Si dice ***immagine di $C \subseteq A$ mediante $f$*** il ***sottoinsieme di B costituito dalle immagini di tutti gli elementi di C***, ovvero:
 $$
 f(C) := \{b \in B: \exists a \in C : b=f(a)\} = \{f(a): a \in C\}
@@ -12,6 +14,7 @@ Si dice ***controimmagine di $C \subseteq B$ mediante $f$*** il ***sottoinsieme 
 $$
 f^{-1}(C) := \{a \in A :f(a)\in C\}
 $$
+
 Un'applicazione si dice ***suriettiva*** se $\mathrm{Im}(f)=B$.
 Un'applicazione si dice ***iniettiva*** se $\forall a_{1},a_{2}\in A\ a_{1}\neq a_{2}\implies f(a_{1})\neq f(a_{2})$.
 Un'applicazione ***biiettiva*** è sia *suriettiva* che *iniettiva*, ed è l'unica ***invertibile***, ovvero per la quale si può determinare l'***applicazione inversa*** $f^{-1} : B \to A$ tale che:
