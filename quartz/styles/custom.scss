@@ -1,17 +1,22 @@
 @use "./base.scss";
 
 // put your custom CSS here!
-.theorem-callout {
-    --callout-color: 238, 15, 149;
-    border-top: none;
-    border-bottom: none;
-    border-left: var(--size-2-2) solid rgb(var(--callout-color));
-    border-right: none;
-    border-radius: 0px;
-    box-shadow: none;
-    padding: 0px;
-    font-family: CMU Serif, Times, Noto Serif JP;
+.callout {
+    &[data-callout="theorem"] {
+        --callout-color: 238, 15, 149;
+        border-top: none;
+        border-bottom: none;
+        border-left: var(--size-2-2) solid rgb(var(--callout-color));
+        border-right: none;
+        border-radius: 0px;
+        box-shadow: none;
+        padding: 0px;
+        font-family: CMU Serif, Times, Noto Serif JP;
+    }
 }
+// .theorem-callout {
+    
+// }
 
 .theorem-callout .callout-title {
     padding: var(--size-2-3);
